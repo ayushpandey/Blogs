@@ -1,0 +1,26 @@
+<html ng-app="app">
+<head>
+    <title>Feeder</title>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.6-dist/css/bootstrap.css">
+    <script src="app.js"></script>
+</head>
+<body >
+<div id='main' class="container" ng-controller="userController">
+    <form class="form-auth" action="./posts.html" ng-submit="createuser()">
+        <h2 class="jumbotron">Update Details</h2>
+        <input type="text" ng-model="newuser.name" placeholder="Name" class="form-control" required="required"><br>
+        <input type="email" ng-model="newuser.email" placeholder="E-Mail" class="form-control" required="required"><br>
+        <input type="date"  ng-model="newuser.dob" required="required" class="form-control"><br>
+
+        <button type="submit" class="btn btn-primary" >Update Details</button>
+
+
+    </form>
+</div>
+
+
+
+
+</body>
+</html>
